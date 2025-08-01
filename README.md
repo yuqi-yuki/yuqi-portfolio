@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This site showcases my background, experience, and selected data projects in machine learning, NLP, and data visualization.
 
-🔗 **Live website**: [https://yuqi-yuki.github.io/yuqi-portfolio](https://yuqi-yuki.github.io/yuqi-portfolio)
+🔗 **Live website**: [Here](https://yuqi-yuki.github.io/yuqi-portfolio)
 
 ---
 
@@ -16,9 +16,9 @@ Welcome to my personal portfolio website! This site showcases my background, exp
 
 ## 🧰 Technologies Used
 
-HTML / CSS
-VS Code
-GitHub Pages (hosting)
+- **HTML5 / CSS3**
+- **Font Awesome** for icons
+- **GitHub Pages** for hosting
 
 ---
 
