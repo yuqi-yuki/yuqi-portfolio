@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yuqi Su </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      margin-top: 80px; /* 防止 header 遮挡 */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      color: #002f66;
+    }
+
+    header {
+      background-color: #002f66;
+      color: white;
+      height: 80px;
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-title {
+      font-size: 20px;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow-wrap: break-word;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 16px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .site-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+    }
+    section {
+      padding: 60px 40px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #002f66;
+      margin-bottom: 20px;
+    }
+
+    .download-button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .download-button a {
+      background-color: #002f66;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .download-button a i {
+      margin-right: 10px;
+    }
+
+    .experience, .education, .technical-skills, .certifications {
+      max-width: 1000px;
+      margin: 0 auto 60px auto;
+    }
+
+    .experience h3,
+    .experience p,
+    .experience li,
+    .education h3,
+    .education p {
+      color: black;
+    }
+
+    .experience ul,
+    .education ul {
+      padding-left: 20px;
+    }
+
+    .experience ul li,
+    .education ul li {
+      margin-bottom: 8px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+    .skill-tag {
+      background-color: white;
+      border: 2px solid #002f66;
+      color: #002f66;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      background-color: #002f66;
+      color: white;
+    }
+
+    .cert-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      border: 2px solid #002f66;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .cert-item a {
+      text-decoration: none;
+      color: #002f66;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #002f66;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-title">Yuqi Su | 📈 Data Analyst 💻 Data Scientist</div>
+    <nav class="nav-links">
+      <a href="portfolio.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <section class="resume-section">
+    <div class="download-button">
+      <a href="assets/CV_Yuqi_SU.pdf" download>
+        <i class="fas fa-download"></i> Download Resume (PDF)
+      </a>
+    </div>
+
+    <div class="experience">
+      <h2>Professional Experience</h2>
+      <h3>Data Analyst | Deepki, Paris, France</h3>
+      <p>09/2023 - 02/2024</p>
+      <ul>
+        <li>Analyzed commercial performance to distinguish trends in won vs. lost opportunities.</li>
+        <li>Identified failure causes and proposed optimizations to improve the sales pipeline.</li>
+        <li>Built dashboards in Salesforce and designed visualizations using Tableau Prep & Desktop.</li>
+        <li>Applied K-means to segment sales performance and uncover hidden patterns.</li>
+        <li>Collaborated with cross-functional teams to deliver insights to decision-makers.</li>
+      </ul>
+
+      <h3>Marketing Data Analyst | RONG MAO HANG, France</h3>
+      <p>03/2021 - 05/2021</p>
+      <ul>
+        <li>Automated customer feedback analysis using NLP & sentiment analysis (efficiency +67%).</li>
+        <li>Identified pain points to improve services and communication.</li>
+        <li>Delivered strategic recommendations based on SWOT analysis.</li>
+      </ul>
+
+      <h3>Financial Data Analyst | Shanghai Disneyland, China</h3>
+      <p>01/2018 - 06/2018</p>
+      <ul>
+        <li>Reduced invoice processing time by ~60% with Excel automation.</li>
+        <li>Analyzed voucher usage for cost-saving (~40%) opportunities.</li>
+        <li>Designed intuitive visualizations for quick decisions.</li>
+      </ul>
+    </div>
+
+    <div class="education">
+      <h2>Education</h2>
+      <h3>MSc in AI & Data Analytics | Master in Management (Grande École)</h3>
+      <p>Toulouse Business School, France (Double Degree)</p>
+      <h3>Bachelor in Applied Foreign Languages</h3>
+      <p>Université Lumière Lyon 2, France</p>
+      <h3>Bachelor in Finance</h3>
+      <p>Shanghai Maritime University, China</p>
+    </div>
+
+    <div class="technical-skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-tag"><i class="fab fa-python"></i> Python</div>
+        <div class="skill-tag"><i class="fas fa-code"></i> R</div>
+        <div class="skill-tag"><i class="fas fa-database"></i> SQL</div>
+        <div class="skill-tag"><i class="fas fa-chart-bar"></i> Power BI</div>
+        <div class="skill-tag"><i class="fas fa-table"></i> Tableau</div>
+        <div class="skill-tag"><i class="fas fa-file-excel"></i> Excel</div>
+        <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="skill-tag"><i class="fas fa-code"></i> PySpark</div>
+        <div class="skill-tag"><i class="fas fa-robot"></i> NLP</div>
+        <div class="skill-tag"><i class="fas fa-cloud"></i> Azure</div>
+        <div class="skill-tag"><i class="fas fa-cogs"></i> Dataiku</div>
+        <div class="skill-tag"><i class="fas fa-cloud-upload-alt"></i> Salesforce</div>
+      </div>
+    </div>
+
+    <div class="certifications">
+      <h2>Certifications</h2>
+      <div class="cert-item">
+        <div>Microsoft Certified: Azure Data Scientist Associate</div>
+        <a href="https://www.credly.com/badges/49ef0f15-4cc4-448d-8e19-1ecf7c3b0368/linked_in_profile" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-item">
+        <div>Dell Technologies Proven Professional – Data Science Track</div>
+        <a href="https://www.credly.com/badges/c0768f2a-96ce-4445-a99e-53034944b6f8/linked_in_profile" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-item">
+        <div>Google BigQuery for Data Analysts</div>
+        <a href="https://www.linkedin.com/learning/certificates/697be868acd3442a07a1b8aaca640e0067ce28719e456a38455a721c1ea759b2?trk=share_certificate" target="_blank">View Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Yuqi Su | Portfolio</p>
+  </footer>
+</body>
+</html>

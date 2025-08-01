@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuqi Su </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      margin-top: 80px; /* 防止 header 遮挡 */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      color: #002f66;
+    }
+
+    header {
+      background-color: #002f66;
+      color: white;
+      height: 80px;
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-title {
+      font-size: 20px;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow-wrap: break-word;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 16px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .site-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 40px;
+      background-color: #f7f7f7;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 55%;
+      min-width: 280px;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #002f66;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      border: 2px solid #002f66;
+      color: #002f66;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #e6f0ff;
+    }
+
+    .hero img {
+      width: 250px;
+      height: auto;
+      border-radius: 50%;
+      border: 4px solid #002f66;
+    }
+
+    .about-section {
+      background-color: #e9eff5;
+      text-align: center;
+      padding: 60px 40px;
+    }
+
+    .about-section h2 {
+      color: #002f66;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .about-section h3 {
+      color: black;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .social-links {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .icon-link {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #002f66;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      color: #002f66;
+      font-size: 26px;
+      transition: all 0.3s;
+    }
+
+    .icon-link:hover {
+      background-color: #e6f0ff;
+      transform: scale(1.1);
+    }
+
+    footer {
+      background-color: #002f66;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-title">Yuqi Su | 📈 Data Analyst 💻 Data Scientist</div>
+    <nav class="nav-links">
+      <a href="portfolio.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Transform Data into AI Intelligence</h1>
+      <p>Advanced NLP and machine learning applied to build smart solutions—automating analysis, detecting patterns, and turning raw data into business value.</p>
+      <div class="hero-buttons">
+        <a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+        <a href="project.html"><i class="fas fa-chart-bar"></i> Projects</a>
+      </div>
+    </div>
+    <img src="assets/profile.jpg" alt="Yuqi Su">
+  </section>
+
+  <section class="about-section">
+    <h2>About Me</h2>
+    <h3>Hi, I'm Yuqi</h3>
+    <p>
+      I'm an AI & Data professional with a strong background in NLP, machine learning, and data visualization. With experience across marketing, finance, and operations, I’ve led projects involving financial text extraction, fraud detection, and chatbot development.
+    </p>
+    <div class="social-links">
+      <a href="https://github.com/yuqi-yuki" class="icon-link" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/yuqi929/" class="icon-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Yuqi Su | Portfolio</p>
+  </footer>
+</body>
+</html>
